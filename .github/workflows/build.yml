@@ -14,8 +14,4 @@ jobs:
         env:
           DOCKER_REPO: ilharp/koishi-docker-test
         run: |
-          docker buildx build \
-            --output "type=image" \
-            --platform linux/amd64 \
-            --file ./Dockerfile \
-            .
+          docker build .
